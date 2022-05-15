@@ -1,0 +1,16 @@
+summon falling_block ~ ~5 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"/setblock ~1 ~-1 ~ chest[type=left]",auto:1b},Passengers:[{Time:20,id:falling_block,BlockState:{Name:iron_block},Passengers:[{Time:1,id:falling_block,BlockState:{Name:iron_block},Passengers:[{Time:1,id:falling_block,BlockState:{Name:command_block},TileEntityData:{Command:"/setblock ~2 ~-2 ~ chest[type=right]",auto:1b}}]}]}]}
+
+summon falling_block ~ ~5 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"/setblock ~1 ~-1 ~ chest[type=left]",auto:1b},Passengers:[{id:armor_stand,Passengers:[{Time:1,id:falling_block,BlockState:{Name:command_block},TileEntityData:{Command:"/setblock ~2 ~-2 ~ chest[type=right]",auto:1b}}]}]}
+
+summon falling_block ~ ~5 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"/setblock ~1 ~-1 ~ chest[type=left]",auto:1b}}
+
+Passengers:[{Time:1,id:falling_block,BlockState:{Name:command_block},TileEntityData:{Command:"",auto:1b}}]
+
+summon falling_block ~ ~5 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"kill @e[type=minecraft:armor_stand]",auto:1b}}
+Passengers:[{id:armor_stand},{id:armor_stand}]
+
+summon falling_block ~ ~1 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"kill @e[type=minecraft:armor_stand]",auto:1b},Passengers:[{id:armor_stand,Passengers:[{id:falling_block,Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"setblock ~1 ~-2 ~ chest[type=left]",auto:1b},Passengers:[{id:armor_stand,Passengers:[{id:falling_block,Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"setblock ~2 ~-3 ~ chest[type=right]",auto:1b}}]}]}]}]}
+
+summon falling_block ~ ~1 ~ {Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"kill @e[type=armor_stand,tag=YHCodeName]",auto:1b},Passengers:[{id:armor_stand,Tags:["YHCodeName"],Passengers:[{id:falling_block,Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"setblock ~1 ~-2 ~ chest[type=left]{Items:[]}",auto:1b},Passengers:[{id:armor_stand,Tags:["YHCodeName"],Passengers:[{id:falling_block,Time:1,BlockState:{Name:command_block},TileEntityData:{Command:"setblock ~2 ~-3 ~ chest[type=right]{Items:[]}",auto:1b}}]}]}]}]}
+
+setblock ~1 ~-2 ~ minecraft:chest[type=left]{Items:[{id:"minecraft:shield",Slot:2b,Count:1b},{id:minecraft:cooked_mutton,Slot:3b,Count:1b},{id:minecraft:waxed_weathered_cut_copper_stairs,Slot:4b,Count:1b},{id:minecraft:polished_blackstone_brick_stairs,Slot:5b,Count:1b},{id:minecraft:player_head,Slot:6b,Count:1b},{id:minecraft:dolphin_spawn_egg,Slot:11b,Count:1b},{id:minecraft:oak_trapdoor,Slot:12b,Count:1b},{id:minecraft:villager_spawn_egg,Slot:13b,Count:1b},{id:minecraft:tube_coral_block,Slot:14b,Count:1b},{id:minecraft:spruce_door,Slot:15b,Count:1b},{id:minecraft:brick_slab,Slot:20b,Count:1b},{id:minecraft:stripped_oak_log,Slot:21b,Count:1b},{id:minecraft:cobblestone_stairs,Slot:22b,Count:1b},{id:minecraft:oxidized_copper,Slot:23b,Count:1b},{id:minecraft:gray_stained_glass,Slot:24b,Count:1b}]}
